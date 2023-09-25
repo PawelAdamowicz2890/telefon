@@ -82,8 +82,9 @@
                         FontSize="25"
                     Clicked="btnCallClicked"/>
                 <Button Grid.Row="4" Grid.Column="2" 
-                    Text="del"
+                    Text="⌫"
                     CornerRadius="60"
+                    FontSize="20"
                     Clicked="btnDelClicked"/>
                 
             </Grid>
