@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="telefon.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Start">
+
+            <Label
+                Text=""
+                x:Name="numerTelLbl"
+                FontSize="48"
+                HorizontalOptions="Center" />
+            <Grid HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="60"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" 
+                        Text="1"
+                        CornerRadius="60"
+                        Clicked="btn1Clicked"/>
+                <Button Grid.Row="0" Grid.Column="1" 
+                        Text="2"
+                        CornerRadius="60"
+                        Clicked="btn2Clicked"/>
+                <Button Grid.Row="0" Grid.Column="2" 
+                        Text="3"
+                        CornerRadius="60"
+                        Clicked="btn3Clicked"/>
+                <Button Grid.Row="1" Grid.Column="0" 
+                        Text="4"
+                        CornerRadius="60"
+                        Clicked="btn4Clicked"/>
+                <Button Grid.Row="1" Grid.Column="1" 
+                        Text="5"
+                        CornerRadius="60"
+                        Clicked="btn5Clicked"/>
+                <Button Grid.Row="1" Grid.Column="2" 
+                        Text="6"
+                        CornerRadius="60"
+                        Clicked="btn6Clicked"/>
+                <Button Grid.Row="2" Grid.Column="0" 
+                        Text="7"
+                        CornerRadius="60"
+                        Clicked="btn7Clicked"/>
+                <Button Grid.Row="2" Grid.Column="1" 
+                        Text="8"
+                        CornerRadius="60"
+                        Clicked="btn8Clicked"/>
+                <Button Grid.Row="2" Grid.Column="2" 
+                        Text="9"
+                        CornerRadius="60"
+                        Clicked="btn9Clicked"/>
+                <Button Grid.Row="3" Grid.Column="1" 
+                        Text="0"
+                        CornerRadius="60"
+                        Clicked="btn0Clicked"/>
+                <Button Grid.Row="3" Grid.Column="0" 
+                    Text="*"
+                    CornerRadius="60"
+                    Clicked="btnStrClicked"/>
+                <Button Grid.Row="3" Grid.Column="2" 
+                    Text="#"
+                    CornerRadius="60"
+                    Clicked="btnHashClicked"/>
+                <Button Grid.Row="4" Grid.Column="1" 
+                    Text="📞"
+                    CornerRadius="60"
+                    BackgroundColor="#15b76d"
+                        FontSize="25"
+                    Clicked="btnCallClicked"/>
+                <Button Grid.Row="4" Grid.Column="2" 
+                    Text="del"
+                    CornerRadius="60"
+                    Clicked="btnDelClicked"/>
+                
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
